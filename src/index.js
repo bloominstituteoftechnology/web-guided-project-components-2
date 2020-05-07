@@ -67,3 +67,6 @@ function dogCardMaker(/* what here? */) {
 
 // 👉 TASK 6- Put a button in index.html to 'get dogs' and add a click
 // event listener that executes `getDogs`
+
+
+// 👉 TASK 7- Loop over the breeds array, fetching a dog at each iteration
