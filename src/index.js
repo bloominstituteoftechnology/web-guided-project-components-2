@@ -2,8 +2,8 @@
 
 
 const breeds = [
+  'mastiff',
   'affenpinscher',
-  'african',
   'australian',
   'mexicanhairless',
   'cocker',
