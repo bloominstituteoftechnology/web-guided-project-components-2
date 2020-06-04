@@ -7,7 +7,6 @@ const breeds = [
   'australian',
   'mexicanhairless',
   'cocker',
-  'yorkshire',
 ]
 
 
@@ -25,7 +24,6 @@ function onlyLikeEvenNumbers(number) {
   })
 }
 
-
 // Usage of a function that returns a promise.
 // Very common to use utility functions that return promises:
 // axios.get('URL') // returns a promise
@@ -36,16 +34,25 @@ function onlyLikeEvenNumbers(number) {
 const entryPoint = null
 
 
-// 👉 TASK 2- Build out a `dogCardMaker` component
-// that takes an object { imageURL, breed }
-// and creates a dog card like the following:
+// 👉 TASK 2- Complete the `dogCardMaker` component,
+// which takes an object { imageURL, breed } as its argument
+// and creates the following elements:
 
 // <div class="dog-card">
 //   <img src={imageURL} class="dog-image">
 //   <h3>Breed: {breed}</h3>
 // </div>
 function dogCardMaker(/* what here? */) {
+  const dogCard = document.createElement('div')
+  const image = document.createElement('img')
+  const heading = document.createElement('h3')
 
+  image.classList.add('dog-image')
+  dogCard.classList.add('dog-card')
+
+  // ?
+
+  return null
 }
 
 
