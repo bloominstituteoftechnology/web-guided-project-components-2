@@ -16,6 +16,7 @@ const entryPoint = null
 // 👉 TASK 3- `dogCardMaker` takes an object and returns a Dog Card.
 // Use this function to build a Card, and append it to the entry point.
 function dogCardMaker({ imageURL, breed }) {
+
   // instantiating the elements
   const dogCard = document.createElement('div')
   const image = document.createElement('img')
