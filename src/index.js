@@ -1,6 +1,5 @@
 // npm imports at the top of the file!
 
-
 const breeds = [
   'mastiff',
   'affenpinscher',
@@ -9,50 +8,36 @@ const breeds = [
   'cocker',
 ]
 
-
-// Declaration of a function that returns a promise.
-// It's not common that we would need to do this.
-function onlyLikeEvenNumbers(number) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (number % 2 === 0) {
-        resolve(`Good: ${number} is even`)
-      } else {
-        reject(`Bad: ${number} is odd`)
-      }
-    }, 1000)
-  })
-}
-
-// Usage of a function that returns a promise.
-// Very common to use utility functions that return promises:
-// axios.get('URL') // returns a promise
-
-
 // 👉 TASK 1- Select the "entry point", the element
 // inside of which we'll inject our dog cards 
 const entryPoint = null
 
 
-// 👉 TASK 2- Complete the `dogCardMaker` component,
-// which takes an object { imageURL, breed } as its argument
-// and creates the following elements:
-
-// <div class="dog-card">
-//   <img src={imageURL} class="dog-image">
-//   <h3>Breed: {breed}</h3>
-// </div>
-function dogCardMaker(/* what here? */) {
+// 👉 TASK 2- `dogCardMaker` is a function that takes an object and returns a Dog Card.
+// Use this function to build a Card, and append it to the document body.
+function dogCardMaker({ imageURL, breed }) {
+  // instantiating the elements
   const dogCard = document.createElement('div')
   const image = document.createElement('img')
   const heading = document.createElement('h3')
 
+  // setting class names, attributes and text
+  heading.textContent = `Breed: ${breed}`
+  image.src = imageURL
   image.classList.add('dog-image')
   dogCard.classList.add('dog-card')
 
-  // ?
+  // creating the hierarchy
+  dogCard.appendChild(image)
+  dogCard.appendChild(heading)
 
-  return null
+  // adding some interactivity
+  dogCard.addEventListener('click', () => {
+    dogCard.classList.toggle('selected')
+  })
+
+  // never forget to return!
+  return dogCard
 }
 
 
