@@ -2,7 +2,15 @@
 // We never nest imports inside blocks of code!
 
 
-// 👉 TASK 1- Test out the endpoint `https://dog.ceo/api/breeds/image/random`
+// 👉 TASK 1- Test out the following endpoints:
+
+//     https://lambda-times-api.herokuapp.com/friends
+//     https://lambda-times-api.herokuapp.com/friends/1
+//     https://lambda-times-api.herokuapp.com/quotes
+//     https://lambda-times-api.herokuapp.com/cards
+//     https://lambda-times-api.herokuapp.com/breeds
+//     https://dog.ceo/api/breeds/image/random
+
 //    * With HTTPie (command-line tool)
 //    * With Postman (tool with GUI)
 //    * With Chrome
@@ -48,15 +56,16 @@ function dogCardMaker({ imageURL, breed }) {
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
-//    (instructor will demo fetching a random dog from `https://dog.ceo/api/breeds/image/random`)
 
 
-// 👉 TASK 6- Wrap the fetching operation inside a function `getDogs`
+// 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
 
 
-// 👉 TASK 7- Put a button in index.html to 'get dogs' and add a click
+// 👉 (OPTIONAL) TASK 7- Put a button in index.html to 'get dogs' and add a click
 // event listener that executes `getDogs`
 
 
-// 👉 TASK 8- Import the breeds and loop over them, fetching a dog at each iteration
+// 👉 (OPTIONAL) TASK 8- Import the breeds from `breeds.js`
+// or request them from https://lambda-times-api.herokuapp.com/breeds
+// and loop over them, fetching a dog at each iteration
