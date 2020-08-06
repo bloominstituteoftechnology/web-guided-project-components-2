@@ -6,6 +6,7 @@
 //    * With HTTPie (command-line tool)
 //    * With Postman (tool with GUI)
 //    * With Chrome
+//    * With JS using the native fetch
 
 
 // 👉 TASK 2- Select the "entry point", the element
