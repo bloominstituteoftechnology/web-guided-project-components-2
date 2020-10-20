@@ -4,17 +4,17 @@
 
 // 👉 TASK 1- Test out the following endpoints:
 
-//     https://lambda-times-api.herokuapp.com/friends
-//     https://lambda-times-api.herokuapp.com/friends/1
-//     https://lambda-times-api.herokuapp.com/quotes
-//     https://lambda-times-api.herokuapp.com/cards
-//     https://lambda-times-api.herokuapp.com/breeds
-//     https://dog.ceo/api/breeds/image/random
+//  https://lambda-times-api.herokuapp.com/friends
+//  https://lambda-times-api.herokuapp.com/friends/1
+//  https://lambda-times-api.herokuapp.com/quotes
+//  https://lambda-times-api.herokuapp.com/cards
+//  https://lambda-times-api.herokuapp.com/breeds
+//  https://dog.ceo/api/breeds/image/random
 
-//    * With HTTPie (command-line tool)
-//    * With Postman (tool with GUI)
-//    * With Chrome
-//    * With JS using the native fetch
+//  * With HTTPie (command-line HTTP Client)
+//  * With Postman (HTTP Client with GUI)
+//  * With Chrome and the Network Tab
+//  * With JS using the native fetch [STRETCH]
 
 
 // 👉 TASK 2- Select the "entry point", the element
@@ -25,7 +25,6 @@ const entryPoint = null
 // 👉 TASK 3- `dogCardMaker` takes an object and returns a Dog Card.
 // Use this function to build a Card, and append it to the entry point.
 function dogCardMaker({ imageURL, breed }) {
-
   // instantiating the elements
   const dogCard = document.createElement('div')
   const image = document.createElement('img')
