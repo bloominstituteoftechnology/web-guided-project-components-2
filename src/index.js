@@ -1,7 +1,3 @@
-// Imports at the top of the file!
-// We never nest imports inside blocks of code!
-
-
 // 👉 TASK 1- Test out the following endpoints:
 
 //  https://lambda-times-api.herokuapp.com/friends
