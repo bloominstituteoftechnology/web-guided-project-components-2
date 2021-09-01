@@ -7,8 +7,6 @@
 //  https://lambda-times-api.herokuapp.com/breeds
 //  https://dog.ceo/api/breeds/image/random
 
-//  * With HTTPie (command-line HTTP Client)
-//  * With Postman (HTTP Client with GUI)
 //  * With Chrome and the Network Tab
 //  * With JS using the native fetch [STRETCH]
 
