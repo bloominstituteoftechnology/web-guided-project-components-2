@@ -1,13 +1,8 @@
 // 👉 TASK 1- Test out the following endpoints:
 
-//  https://lambda-times-api.herokuapp.com/friends
-//  https://lambda-times-api.herokuapp.com/friends/1
-//  https://lambda-times-api.herokuapp.com/quotes
-//  https://lambda-times-api.herokuapp.com/cards
-//  https://lambda-times-api.herokuapp.com/breeds
 //  https://dog.ceo/api/breeds/image/random
 
-//  * With Chrome and the Network Tab
+//  * With Firefox and the Network Tab
 //  * With JS using the native fetch [STRETCH]
 
 
