@@ -15,23 +15,19 @@ const entryPoint = null
 // Use this function to build a Card, and append it to the entry point.
 function dogCardMaker({ imageURL, breed }) {
   // instantiating the elements
-  const dogCard = document.createElement('div')
-  const image = document.createElement('img')
-  const heading = document.createElement('h3')
-  // setting class names, attributes and text
-  heading.textContent = `Breed: ${breed}`
-  image.src = imageURL
-  image.classList.add('dog-image')
-  dogCard.classList.add('dog-card')
-  // creating the hierarchy
-  dogCard.appendChild(image)
-  dogCard.appendChild(heading)
-  // adding some interactivity
-  dogCard.addEventListener('click', () => {
-    dogCard.classList.toggle('selected')
-  })
+  /*
+    <div class="dog-card">
+      <img class="dog-image">
+      <h3>
+    </div>
+  */
+  // set class names, attributes and text
+
+  // create the hierarchy
+
+  // add some interactivity
+
   // never forget to return!
-  return dogCard
 }
 
 
