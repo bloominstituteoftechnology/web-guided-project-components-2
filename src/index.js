@@ -51,5 +51,4 @@ function dogCardMaker({ imageURL, breed }) {
 
 
 // 👉 (OPTIONAL) TASK 8- Import the breeds from `breeds.js`
-// or request them from https://lambda-times-api.herokuapp.com/breeds
 // and loop over them, fetching a dog at each iteration
