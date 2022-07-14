@@ -35,13 +35,14 @@ function dogCardMaker({ imageURL, breed }) {
   dogCard.appendChild(image);
   dogCard.appendChild(heading);
   // add some interactivity
+  // onClick of the dogCard element, I want to toggle the "selected" class on the dogCard element...
+  dogCard.addEventListener("click", () => {
+    dogCard.classList.toggle("selected");
+  })
 
   // never forget to return!
   return dogCard;
 }
-
-const blah = dogCardMaker({ imageURL: "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg", breed: "Blah" });
-console.log(blah);
 
 // 👉 TASK 4- Bring the Axios library into the project using one of two methods:
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
