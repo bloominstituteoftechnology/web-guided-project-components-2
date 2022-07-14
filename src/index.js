@@ -53,7 +53,7 @@ function dogCardMaker({ imageURL, breed }) {
 //    * IN ANY CASE: log "done" to the console
 function getDogs(breed, count, selector) {
   const entryPoint = document.querySelector(selector);
-
+  entryPoint.innerHTML = "";
   axios.get(`https://dog.ceo/api/breed/${breed}/images/random/${count}`)
     .then(res => {
       /**
@@ -98,6 +98,6 @@ dogBtn.addEventListener("click", () => {
    * 2.) for every arr[i] pass it into my getDogs function call
    */
   breeds.forEach(breed => {
-    getDogs(breed, 3, ".entry");
+    getDogs(breed, 1, ".entry");
   })
 })
