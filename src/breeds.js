@@ -5,3 +5,5 @@ const breeds = [
   'mexicanhairless',
   'cocker',
 ]
+
+export default breeds;
