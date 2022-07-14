@@ -1,3 +1,4 @@
+import axios from "axios";
 // 👉 TASK 1- Test out the following endpoints:
 
 //  https://dog.ceo/api/breeds/image/random
@@ -48,11 +49,36 @@ function dogCardMaker({ imageURL, breed }) {
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
 //    * Projects with npm: install it with npm and import it into this file
 
-
 // 👉 TASK 5- Fetch dogs from `https://dog.ceo/api/breed/{breed}/images/random/{number}`
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
+axios.get(`https://dog.ceo/api/breed/spaniel/images/random/3`)
+  .then(res => {
+    /**
+     * 1.) STEP ONEEEEEEEEE: set data to a constant
+     * 2.) STEP TWOOOOOOOOO: loop over the array
+     * 3.) STEP THREEEEEEEE: call dogCardMaker
+     * 4.) STEP FOURRRRRRRR: pass in arr[i] to dogCardMaker
+     * 5.) STEP FIVEEEEEEEE: append to the entry point
+     */
+    const data = res.data.message;
+    data.forEach(elem => {
+      console.log(elem);
+      const dogData = {
+        imageURL: elem,
+        breed: "spaniel"
+      }
+      const dogElem = dogCardMaker(dogData);
+      entryPoint.appendChild(dogElem);
+    })
+  })
+  .catch(err => {
+    console.error(err);
+  })
+  .finally(() => {
+    console.log("I made it ma!!!");
+  })
 
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
